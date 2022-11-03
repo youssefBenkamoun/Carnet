@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".crud.credit.addActivity">
+
+    <TextView
+        android:id="@+id/add_creditTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/"
+        android:gravity="center"
+        android:paddingBottom="60dp"
+        android:text="Ajouter Credit"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:textSize="30dp"/>
+
+
+    <TextView
+        android:id="@+id/clientLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Client : " />
+
+    <Spinner
+        android:id="@+id/client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:entries="@array/clients"
+        android:minHeight="48dp" />
+
+
+
+    <TextView
+        android:id="@+id/productLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product : " />
+
+    <Spinner
+        android:id="@+id/produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:entries="@array/products"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prix : " />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:hint="Entrez prix du credit"/>
+
+    <Button
+        android:id="@+id/ajou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:layout_marginTop="60dp"/>
+
+</LinearLayout>

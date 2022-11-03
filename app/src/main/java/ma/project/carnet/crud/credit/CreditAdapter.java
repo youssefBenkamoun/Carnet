@@ -97,7 +97,7 @@ public class CreditAdapter extends RecyclerView.Adapter<CreditAdapter.CreditView
                         credit.setEtat("Payé");
                         cs.update(credit);
                         credits = cs.findAll();
-                        notifyItemChanged(holder.getAdapterPosition());
+                        notifyItemChanged(holder.getBindingAdapterPosition());
                     }
                 }).setNegativeButton("Annuler", null).create();
                 dialog.show();

@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class MySQLiteHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 5;
 
     private static final String DATABASE_NAME = "dukan";
 
@@ -29,12 +29,10 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
             "id INTEGER primary key autoincrement," +
             "prix FLOAT," +
             "client_id INTEGER NOT NULL," +
-            "category_id INTEGER NOT NULL," +
             "product_id INTEGER NOT NULL,"+
             "date DATE,"+
             "etat STRING," +
             "FOREIGN KEY (client_id) REFERENCES client(id)," +
-            "FOREIGN KEY (category_id) REFERENCES category(id)," +
             "FOREIGN KEY (product_id) REFERENCES product(id))";
 
     public MySQLiteHelper(Context context) {

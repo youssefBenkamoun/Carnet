@@ -123,7 +123,7 @@ public class CreditService{
                 Log.d("id = ", e.getId()+"");
             }while(c.moveToNext());
         }
-        Log.d("findall", eds.get(0).getEtat());
+
         return eds;
 
     }
