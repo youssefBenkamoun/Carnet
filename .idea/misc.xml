@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.183" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.183" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/drawable/ic_red_delete_24.xml" value="0.183" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/drawable/side_nav_bar.xml" value="0.2045" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/activity_add_client.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/activity_client.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/activity_main2.xml" value="0.19384057971014493" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/activity_select_products.xml" value="0.15" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/app_bar_main.xml" value="0.1" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/content_main.xml" value="0.16576086956521738" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/credit_edit_item.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/credit_item.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/fragment_add.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/fragment_add_client.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/fragment_categorie_.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/fragment_client.xml" value="0.22" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/fragment_credit_.xml" value="0.25" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/fragment_produit_.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/item_simple_element.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/nav_header_main.xml" value="0.22" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/popup_categorie.xml" value="0.18" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/popup_edit.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/popup_produit_edit.xml" value="0.22" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/popup_produit_rdit.xml" value="0.1" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/popup_row.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/recycle_view.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/row.xml" value="0.33" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/row_categorie.xml" value="0.25" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/layout/row_produit.xml" value="0.25" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/menu/activity_main_drawer.xml" value="0.5" />
+        <entry key="..\:/Users/hp/StudioProjects/carnet/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

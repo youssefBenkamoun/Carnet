@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ma.project.carnet.menu.fragment_home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_client"
+        android:name="ma.project.carnet.crud.fragment_client"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/recycle_view" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="ma.project.carnet.menu.fragment_add"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/nav_add_client"
+        android:name="ma.project.carnet.others.add_client"
+        android:label="Add"
+        tools:layout="@layout/fragment_client" />
+    <fragment
+        android:id="@+id/nav_categorie"
+        android:name="ma.project.carnet.crud.Categorie_crud.Categorie_Fragment"
+        android:label="Product_Category"
+        tools:layout="@layout/fragment_categorie_" />
+    <fragment
+        android:id="@+id/nav_produit"
+        android:name="ma.project.carnet.crud.Produit_crud.Produit_Fragment"
+        android:label="Product"
+        tools:layout="@layout/fragment_produit_" />
+    <fragment
+        android:id="@+id/nav_credit"
+        android:name="ma.project.carnet.crud.credit.Credit_Fragment"
+        android:label="Credit"
+        tools:layout="@layout/fragment_credit_" />
+</navigation>

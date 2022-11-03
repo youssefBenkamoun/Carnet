@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<item android:title="principale">
+    <menu >
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_baseline_home_24"
+                android:title="@string/menu_home" />
+            <item
+                android:id="@+id/nav_add_client"
+                android:icon="@drawable/ic_baseline_library_books_24"
+                android:title="Ajouter_Crédit" />
+
+        </group>
+    </menu>
+</item>
+    <item android:title="crud">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_client"
+                    android:icon="@drawable/ic_baseline_account_circle_24"
+                    android:title="Client" />
+                <item
+                    android:id="@+id/nav_categorie"
+                    android:icon="@drawable/ic_baseline_account_tree_24"
+                    android:title="Catégorie" />
+                <item
+                    android:id="@+id/nav_produit"
+                    android:icon="@drawable/ic_baseline_fastfood_24"
+                    android:title="Produit" />
+                <item
+                    android:id="@+id/nav_credit"
+                    android:icon="@drawable/ic_baseline_add_card_24"
+                    android:title="Crédit" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="graphs">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/graph1"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="@string/menu_home" />
+                <item
+                    android:id="@+id/graph2"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/menu_gallery" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

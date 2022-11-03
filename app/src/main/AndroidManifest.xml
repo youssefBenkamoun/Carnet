@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ma.project.carnet">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Carnet">
+        <activity
+            android:name=".crud.Categorie_crud.SelectProductsActivity"
+            android:exported="false"
+            android:parentActivityName=".crud.Categorie_crud.MainActivity" />
+        <activity
+            android:name=".crud.ClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".crud.AddClientActivity"
+            android:exported="false"
+            android:label="add Client"
+            android:parentActivityName=".crud.ClientActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Carnet.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
