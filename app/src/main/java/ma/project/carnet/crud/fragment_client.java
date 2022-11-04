@@ -3,16 +3,21 @@ package ma.project.carnet.crud;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.core.app.ShareCompat;
+import androidx.core.view.MenuItemCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -26,7 +31,7 @@ import ma.project.carnet.services.ClientService;
 
 
 public class fragment_client extends Fragment {
-    private List<Client> arr;
+    private List<Client> arr ;
     private List<Client> clients;
     private CustomAdapter customAdapter;
     private RecyclerView recyclerView;
@@ -52,11 +57,11 @@ public class fragment_client extends Fragment {
             }
         });
         recyclerView = view.findViewById(R.id.recycle_clients);
-        clientService = ClientService.getClientService(this.getContext());//new ClientService(this.getContext());
+        clientService = ClientService.getClientService(this.getContext());
 
         arr = clientService.findAll();
 
-        customAdapter = new CustomAdapter(arr);
+        customAdapter = new CustomAdapter(arr,this.getContext());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(customAdapter);
@@ -73,7 +78,7 @@ public class fragment_client extends Fragment {
         arr = clientService.findAll();
         //Log.d("yyyyy",arr.get(0).getPrenom()+" ");
 
-        customAdapter = new CustomAdapter(arr);
+        customAdapter = new CustomAdapter(arr,this.getContext());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(customAdapter);
@@ -90,5 +95,6 @@ public class fragment_client extends Fragment {
         super.onPause();
         Log.d("yyyyy","on Pause !!!!!!! ");
     }
+
 
 }

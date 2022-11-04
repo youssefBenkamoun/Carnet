@@ -15,6 +15,7 @@ import ma.project.carnet.util.MySQLiteHelper;
 
 
 public class CreditService{
+    public static CreditService creditService;
 
 
     private static final String TABLE_NAME ="credit";
@@ -30,7 +31,14 @@ public class CreditService{
 
     private MySQLiteHelper helper;
 
-    public CreditService(Context context) {
+    public static CreditService getCreditService(Context context){
+        if(creditService == null){
+            creditService = new CreditService(context);
+        }
+        return creditService;
+    }
+
+    private CreditService(Context context) {
         this.helper = new MySQLiteHelper(context);
     }
 

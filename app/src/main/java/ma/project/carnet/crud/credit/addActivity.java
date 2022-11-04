@@ -55,7 +55,7 @@ public class addActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
-        cs = new CreditService(this);
+        cs = CreditService.getCreditService(this);
         ps = ProduitService.getProduitService(this);
         cls = ClientService.getClientService(this);
         cat = CategorieService.getCategorieService(this);

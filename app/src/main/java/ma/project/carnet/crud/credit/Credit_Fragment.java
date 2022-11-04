@@ -51,7 +51,7 @@ public class Credit_Fragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_credit_, container, false);
 
-        CreditService cs = new CreditService(this.getContext());
+        CreditService cs = CreditService.getCreditService(this.getContext());
         ProduitService ps = ProduitService.getProduitService(this.getContext());
         ClientService cls =ClientService.getClientService(this.getContext());
         CategorieService cat =CategorieService.getCategorieService(this.getContext());
@@ -82,4 +82,13 @@ public class Credit_Fragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        CreditService cs = CreditService.getCreditService(this.getContext());
+        creditAdapter = new CreditAdapter(getContext(), cs.findAll());
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setAdapter(creditAdapter);
+    }
 }

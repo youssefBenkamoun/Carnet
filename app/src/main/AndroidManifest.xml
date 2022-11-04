@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Carnet">
         <activity
+            android:name=".crud.ShowClientDetails"
+            android:exported="false" />
+        <activity
             android:name=".crud.credit.MainActivity"
             android:exported="false" />
         <activity
             android:name=".crud.credit.addActivity"
+            android:exported="false"
             android:label="add Client"
-            android:parentActivityName=".crud.credit.MainActivity"
-            android:exported="false" />
+            android:parentActivityName=".crud.credit.MainActivity" />
         <activity
             android:name=".crud.Categorie_crud.SelectProductsActivity"
             android:exported="false"

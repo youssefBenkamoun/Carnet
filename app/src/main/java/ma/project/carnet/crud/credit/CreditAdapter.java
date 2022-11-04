@@ -49,7 +49,7 @@ public class CreditAdapter extends RecyclerView.Adapter<CreditAdapter.CreditView
 
 
 
-        CreditService cs = new CreditService(view.getContext());
+        CreditService cs = CreditService.getCreditService(view.getContext());
         ProduitService ps = ProduitService.getProduitService(view.getContext());
         ClientService cls =ClientService.getClientService(view.getContext());
         CategorieService cat =CategorieService.getCategorieService(view.getContext());
@@ -97,6 +97,8 @@ public class CreditAdapter extends RecyclerView.Adapter<CreditAdapter.CreditView
                         credit.setEtat("Payé");
                         cs.update(credit);
                         credits = cs.findAll();
+                        //CreditService.getCreditService(context).update(credit);
+                        credits = CreditService.getCreditService(context).findAll();
                         notifyItemChanged(holder.getBindingAdapterPosition());
                     }
                 }).setNegativeButton("Annuler", null).create();

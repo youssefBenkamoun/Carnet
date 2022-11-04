@@ -1,6 +1,8 @@
 package ma.project.carnet.crud;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ShareCompat;
+import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -8,7 +10,10 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.SearchView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -25,46 +30,42 @@ public class ClientActivity extends AppCompatActivity {
     List<Client> tab;
     ClientService clientService = ClientService.getClientService(this);//new ClientService(this);
     CustomAdapter customAdapter;
+    private List<Client> stars;
+    private RecyclerView recyclerView;
+    private CustomAdapter starAdapter = null;
+    private ClientService service;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //tab=ClientService.getClientService(this).findAll();
         setContentView(R.layout.activity_client);
 
-        /*
-        RecyclerView recyclerView = findViewById(R.id.recycle_clients);
-        clientService = ClientService.getClientService(this);
 
-        List<Client> arr = clientService.findAll();
 
-        customAdapter = new CustomAdapter(arr);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(customAdapter);*/
-
-        /*recycle_clients = findViewById(R.id.recycle_clients);
-        addButton = findViewById(R.id.addButton);
-        Log.d("youssef1", "(String) client_id.get(0)");
-        addButton.setOnClickListener(new View.OnClickListener() {
+    }
+    /*@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        MenuItem menuItem = menu.findItem(R.id.app_bar_search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(menuItem);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ClientActivity.this, AddClientActivity.class);
-                startActivity(intent);
+            public boolean onQueryTextSubmit(String query) {
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                Log.d("TAG", newText);
+                if (starAdapter != null) {
+                    starAdapter.getFilter().filter(newText);
+
+                }
+                return true;
             }
         });
-        fction();
-        for(Client c:clientService.findAll()){
-            client_id.add(c.getId());
-            client_nom.add(c.getNom());
-            client_prenom.add(c.getPrenom());
-            client_cin.add(c.getCin());
-            client_telephone.add(c.getTelephone());
-        }
-        Log.d("youssef1", (String) client_id.get(0));
-        Log.d("youssef1", "(String) client_id.get(0)");
-        customAdapter = new CustomAdapter(this, client_id,client_nom,client_prenom,client_cin,client_telephone);
-        recycle_clients.setAdapter(customAdapter);
-        recycle_clients.setLayoutManager(new LinearLayoutManager(this));*/
-    }
+        return true;
+    }*/
 }

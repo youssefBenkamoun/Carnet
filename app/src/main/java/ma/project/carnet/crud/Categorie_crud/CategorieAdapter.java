@@ -34,7 +34,7 @@ import ma.project.carnet.services.ProduitService;
 
 public class CategorieAdapter extends RecyclerView.Adapter<CategorieAdapter.MyViewHolder> {
     List<String> args;
-    List<Categorie> clients;
+    private static List<Categorie> clients;
     private Context context;
     private ImageView red_delete;
     private RecyclerViewClickListener listener;
@@ -91,6 +91,8 @@ public class CategorieAdapter extends RecyclerView.Adapter<CategorieAdapter.MyVi
     public int getItemCount() {
         return clients.size();
     }
+
+
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView designation,id_cat;
